@@ -17,5 +17,9 @@ path = "src/am.rs"
 name = "yi"
 path = "src/yi.rs"
 
+[[bin]]
+name = "fmtn"
+path = "src/fmtn.rs"
+
 [dependencies]
 rand = "0.8.5"
