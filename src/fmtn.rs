@@ -48,15 +48,4 @@ fn main() {
         }
     }
     print!("\n");
-
-    // let s: String = args[1]
-    // .chars()
-    // .filter(|c| c.is_numeric() || ".".contains(*c))
-    // .collect();
-
-    // println!("s: {s}");
-
-    // let f: f32 = s.parse().unwrap();
-
-    // println!("n: {}", f);
 }
