@@ -12,7 +12,7 @@ fn main() {
 
     let s = &args[1];
 
-    let mut ss = String::from("");
+    let mut ss = String::with_capacity(s.len());
     let mut dot_i = 0;
 
     let mut dot_found = false;
@@ -37,7 +37,7 @@ fn main() {
         print!("{c}");
 
         dot_i -= 1;
-        if dot_i == 0 {
+        if dot_found && dot_i == 0 {
             print!(".");
         }
 
