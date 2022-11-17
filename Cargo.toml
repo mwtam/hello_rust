@@ -21,5 +21,9 @@ path = "src/yi.rs"
 name = "fmtn"
 path = "src/fmtn.rs"
 
+[[bin]]
+name = "infection"
+path = "src/infection.rs"
+
 [dependencies]
 rand = "0.8.5"

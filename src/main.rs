@@ -10,7 +10,17 @@ fn main() {
     // test_vec();
     // test_magic();
     // test_take_own();
-    test_string();
+    // test_string();
+    test_range();
+}
+
+fn test_range() {
+    for i in (0..20) {
+        println!("{i}");
+    }
+    // for i in (0..20).step_by(7) {
+    //     println!("{i}");
+    // }
 }
 
 fn test_string() {
