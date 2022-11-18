@@ -1,21 +1,21 @@
-use std::ops::Add;
+// use std::ops::Add;
 
 use rand::Rng;
 
 fn main() {
-    // test();
-    // test_rand();
-    // test_loop();
-    // test_ownership();
-    // test_vec();
-    // test_magic();
-    // test_take_own();
-    // test_string();
+    test();
+    test_rand();
+    test_loop();
+    test_ownership();
+    test_vec();
+    test_magic();
+    test_take_own();
+    test_string();
     test_range();
 }
 
 fn test_range() {
-    for i in (0..20) {
+    for i in 0..20 {
         println!("{i}");
     }
     // for i in (0..20).step_by(7) {
@@ -103,7 +103,7 @@ fn test_ownership() {
     v.push(s3);
 
     // println!("s1 = {}", s1); // No more. Moved.
-    let s11 = &v[0];
+    // let s11 = &v[0];
     println!("s1 = {}", v[0]);
     
 
