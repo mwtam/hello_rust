@@ -23,8 +23,10 @@ fn main() {
     };
 
     let mut iter = after_dp.split("/");
+    let id = iter.next().unwrap(); // Something must exist, unwrap directly.
 
-
+    // Sometime the url comes with a '?' directly after the id.
+    let mut iter = id.split("?");
     let id = iter.next().unwrap(); // Something must exist, unwrap directly.
 
     println!("https://www.amazon.com/dp/{id}");
