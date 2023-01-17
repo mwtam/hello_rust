@@ -22,6 +22,11 @@ name = "fmtn"
 path = "src/fmtn.rs"
 
 [[bin]]
+name = "choose"
+path = "src/choose.rs"
+
+
+[[bin]]
 name = "infection"
 path = "src/infection.rs"
 
