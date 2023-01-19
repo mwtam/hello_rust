@@ -25,6 +25,10 @@ path = "src/fmtn.rs"
 name = "choose"
 path = "src/choose.rs"
 
+[[bin]]
+name = "year"
+path = "src/year.rs"
+
 
 [[bin]]
 name = "infection"
@@ -32,3 +36,4 @@ path = "src/infection.rs"
 
 [dependencies]
 rand = "0.8.5"
+chrono = "0.4.23"
