@@ -11,15 +11,35 @@ fn main() {
     // let mut population = vec![true; 7_500_000];
 
     population[0] = true;
+    let n_population = population.len();
 
     for _ in 0..20 {
         let mut new_infection: Vec<usize> = vec![];
-        for p in &population {
+        new_infection.reserve(population.len());
+        for (i, p) in population.iter().enumerate() {
+            // if !*p {
+            //     for _ in 0..1 {
+            //         let n = (rng.gen_range(0..5) as usize + i) % n_population;
+            //         if population[n] {
+            //             new_infection.push(i);
+            //         }
+            //     }
+            //     for _ in 0..1 {
+            //         let n = (rng.gen_range(0..n_population) as usize + i) % n_population;
+            //         if population[n] {
+            //             new_infection.push(i);
+            //         }
+            //     }
+            // }
             if *p {
-                for _ in 0..10 {
-                    let n = rng.gen_range(0..population.len() as u32) as usize;
-                    // let n = between.sample(&mut rng);
-                    // let n = 10;
+                for _ in 0..1 {
+                    let n = (rng.gen_range(0..5) as usize + i) % n_population;
+                    if !population[n] {
+                        new_infection.push(n);
+                    }
+                }
+                for _ in 0..1 {
+                    let n = rng.gen_range(0..n_population);
                     if !population[n] {
                         new_infection.push(n);
                     }
