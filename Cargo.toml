@@ -29,6 +29,10 @@ path = "src/choose.rs"
 name = "year"
 path = "src/year.rs"
 
+[[bin]]
+name = "hello_rayon"
+path = "src/hello_rayon.rs"
+
 
 [[bin]]
 name = "infection"
@@ -37,3 +41,5 @@ path = "src/infection.rs"
 [dependencies]
 rand = "0.8.5"
 chrono = "0.4.23"
+rayon = "1.6.1"
+itertools = "0.10.5"
